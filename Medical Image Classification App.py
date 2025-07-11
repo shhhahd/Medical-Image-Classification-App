@@ -14,7 +14,7 @@ model_choice = st.sidebar.selectbox("🔍 Choose a Model", ["Brain Tumor", "Ches
 
 # Load the selected model
 if model_choice == "Brain Tumor":
-    model = load_model("brain_tumor.h5")
+    model = load_model("D:/DLProjects/Diseases/brain_tumor.h5")
     class_names = ['glioma', 'meningioma', 'notumor', 'pituitary']
     img_size = (224, 224)
     st.sidebar.markdown("""
@@ -25,7 +25,7 @@ if model_choice == "Brain Tumor":
     - **No Tumor**: Healthy brain
     """)
 elif model_choice == "Chest X-Ray (Pneumonia)":
-    model = load_model("chest-xray-pneumonia.h5")
+    model = load_model("D:/DLProjects/Diseases/chest-xray-pneumonia.h5")
     class_names = ['NORMAL', 'PNEUMONIA']
     img_size = (224, 224)
     st.sidebar.markdown("""
